@@ -3,92 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hao Zheng - Scholar Profile</title>
+    <title>Hao Zheng - Academic Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
             background-color: #f4f4f4;
             color: #333;
-            margin: 0;
-            padding: 20px;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
-        h1 {
-            color: #0056b3;
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 40px;
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #35424a;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+        section {
+            padding: 20px 0;
         }
         h2 {
-            color: #333;
-            border-bottom: 2px solid #0056b3;
-        }
-        p, ul {
-            line-height: 1.6;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
+            color: #35424a;
             margin-bottom: 10px;
         }
-        a {
-            color: #0056b3;
+        .profile {
+            background: #ffffff;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: #35424a;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
+        .publications ul, .patents ul, .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Hao Zheng</h1>
-        <p>PhD Candidate, Department of Mechanical and Mechatronics Engineering, The University of Auckland</p>
-        <p>Email: <a href="mailto:hzhe951@aucklanduni.ac.nz">hzhe951@aucklanduni.ac.nz</a></p>
-        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=OHEa2rIAAAAJ&hl=en&authuser=2">Hao Zheng (郑浩)</a></p>
+    <header>
+        <div class="container">
+            <h1>Hao Zheng</h1>
+            <p>PhD Candidate, Department of Mechanical and Mechatronics Engineering</p>
+            <p>The University of Auckland</p>
+        </div>
+    </header>
 
-        <h2>Research Interests</h2>
-        <p>Video Understanding (Action Recognition & Segmentation); Multi-modal Large Language Model; Generative AI; Human-Robot Collaboration; Human-Centric Manufacturing.</p>
+    <nav>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a>
+            <a href="#patents">Patents</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-        <h2>Publications</h2>
-        <ul>
-            <li>Zheng, H., Lee, R., Liang, H., Lu, Y., Xu, X. 2024. DuCAS: A knowledge-enhanced dual-hand compositional action segmentation method for human-robot collaborative assembly. 2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).</li>
-            <li>Zheng, H., Lee, R., Lu, Y., Xu, X. 2024. DuHa: A dual-hand action segmentation method for human-robot collaborative assembly. 2024 IEEE 20th International Conference on Automation Science and Engineering.</li>
-            <li>Zheng, H., Lee, R., Lu, Y. 2023. HA-ViD: A Human Assembly Video Dataset for Comprehensive Assembly Knowledge Understanding. NeurIPS 2023.</li>
-            <!-- Add more publications here as needed -->
-        </ul>
+    <section id="about" class="container">
+        <div class="profile">
+            <h2>About Me</h2>
+            <p>Hello, I am Hao Zheng, a PhD candidate at the University of Auckland specializing in human-robot collaboration, video understanding, and human-centric manufacturing. I am passionate about research on action recognition, multi-modal large language models, and generative AI. I have contributed to several academic publications and projects in these fields.</p>
+        </div>
+    </section>
 
-        <h2>Education</h2>
-        <ul>
-            <li>The University of Auckland, PhD Candidate (2020.10 - 2024.12)</li>
-            <li>China University of Mining and Technology, Master of Engineering (2017.09 - 2020.06)</li>
-            <li>Yancheng Institute of Technology, Bachelor of Engineering (2013.09 - 2017.06)</li>
-        </ul>
+    <section id="publications" class="container">
+        <div class="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>Zheng, H., Lee, R., Liang, H., Lu, Y., Xu, X. 2024. DuCAS: a knowledge-enhanced dual-hand compositional action segmentation method for human-robot collaborative assembly. IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).</li>
+                <li>Zheng, H., Lee, R., Lu, Y., Xu, X. 2024. DuHa: a dual-hand action segmentation method for human-robot collaborative assembly. IEEE 20th International Conference on Automation Science and Engineering.</li>
+                <li>Zheng, H., Lee, R., Lu, Y. 2023. HA-ViD: A Human Assembly Video Dataset for Comprehensive Assembly Knowledge Understanding. NeurIPS 2023.</li>
+                <li>Lee, R., Zheng, H., Lu, Y. 2023. Human-robot shared assembly taxonomy: A step toward seamless human-robot knowledge transfer. Robotics and Computer-Integrated Manufacturing. (Co-first Author)</li>
+                <!-- Add more publications here if needed -->
+            </ul>
+        </div>
+    </section>
 
-        <h2>Awards</h2>
-        <ul>
-            <li>Chinese Government Scholarship (2020)</li>
-            <li>National Scholarship for Postgraduate Student (2019)</li>
-            <!-- Add more awards if needed -->
-        </ul>
+    <section id="projects" class="container">
+        <div class="projects">
+            <h2>Research Projects</h2>
+            <ul>
+                <li>Research on Dynamic Coupling Characteristics and Collaborative Control of Large Mirror Manufacturing Equipment with Co-fusion Multi Parallel Manipulators. National Natural Science Foundation of China, Researcher (2017-2020).</li>
+                <li>Research on intelligent sensing technology based on distributed sensor array and the application in front-end protection system of crusher. School-enterprise Cooperation, Principal Investigator (2018-2019).</li>
+                <li>Intelligent monitoring and warning system for personnel in dangerous areas. School-enterprise Cooperation, Principal Investigator (2019).</li>
+                <!-- Add more projects here if needed -->
+            </ul>
+        </div>
+    </section>
 
-        <h2>Patents</h2>
-        <ul>
-            <li>A front-end personnel protection system of mine crusher based on image recognition, CN201910915839.0, 06/2021</li>
-            <!-- Add more patents here -->
-        </ul>
+    <section id="patents" class="container">
+        <div class="patents">
+            <h2>Patents</h2>
+            <ul>
+                <li>A front-end personnel protection system of mine crusher based on image recognition. CN201910915839.0, 2021.</li>
+                <li>A protection system and method for front-end personnel of underground crusher. CN201811197496.0, 2021.</li>
+                <li>An optical mirror polishing equipment. CN107900838B, 2019.</li>
+                <!-- Add more patents here if needed -->
+            </ul>
+        </div>
+    </section>
 
-        <h2>Research Projects</h2>
-        <ul>
-            <li>Research on Dynamic Coupling Characteristics and Collaborative Control of Large Mirror Manufacturing Equipment (National Natural Science Foundation of China, 2017-2020)</li>
-            <!-- Add more projects here -->
-        </ul>
-    </div>
+    <section id="contact" class="container">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:hzhe951@aucklanduni.ac.nz">hzhe951@aucklanduni.ac.nz</a></p>
+            <p>Google Scholar: <a href="https://scholar.google.com/citations?user=OHEa2rIAAAAJ&hl=en&authuser=2">Hao Zheng (郑浩)</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hao Zheng - All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
 </html>
