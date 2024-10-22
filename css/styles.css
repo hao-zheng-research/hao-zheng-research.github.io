@@ -11327,3 +11327,14 @@ section {
     padding: 5rem 0;
     color: #333;
 }
+
+/* Media query for screens narrower than 768px (tablets and mobile devices) */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav {
+    display: none; /* Hide navigation menu on small screens */
+  }
+}
