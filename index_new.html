@@ -41,6 +41,57 @@
                 </div>
             </div>
         </nav>
+
+        <header style="background-color: #e2e2e2;" class="bg-gradient py-8 text-white">
+            <div class="container-lg px-5 text-center">
+                <div class="d-flex align-items-center justify-content-center flex-wrap flex-md-nowrap" id="profile-container">
+                    <div class="me-4 mb-4" id="profile-photo">
+                        <img src="image/hao_profile_smile.JPG" alt="Me!" width="140" height="200" /> <br>
+                        <p class="lead">
+                            <a href="https://github.com/hao-zheng-research">
+                                <img src="image/github_logo.png" alt="github" width="30" height="30"></a>
+                            <a href="https://scholar.google.com/citations?user=OHEa2rIAAAAJ&hl=en&authuser=2">
+                                <img src="image/scholar_logo.png" alt="google scholar" width="30" height="30"></a>
+                            <a href="https://www.linkedin.com/in/hao-zheng-ab7b15248/">
+                                <img src="image/linkedin_logo.png" alt="linked in" width="30" height="30"></a>
+                            <a href="CV/CV_hao.pdf" download="CV_hao.pdf">
+                                <img src="image/resume_icon.png" alt="CV" width="30" height="30"></a>
+                        </p>
+                    </div>
+                    <div id="profile-description">
+                        <h12 class="fw-bolder" style="color: black; text-align: left;">Hao Zheng</h12>
+                        <p class="lead text-start" style="color: black; text-align: left;">
+                            I am a PhD candidate at the Department of Mechanical and Mechatronics Engineering at the University of Auckland, under the supervision of Professor <a href="https://profiles.auckland.ac.nz/x-xu">Xun Xu</a>.
+                            <br>My research focuses on integrating AI with Smart Manufacturing, specifically in areas of Video Understanding (Action Recognition & Segmentation), Human-Robot Collaboration, Human-Centric Manufacturing, and Generative AI.
+                            <br>If you're interested in collaborating on research projects related to AI and Manufacturing, feel free to reach out. I am also currently looking for a postdoctoral position or other research roles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <style>
+          /* Default: Side by side layout */
+          #profile-container {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+          }
+        
+          /* Mobile-specific layout: stack photo above description */
+          @media (max-width: 768px) {
+              #profile-container {
+                  flex-direction: column;
+                  align-items: center;
+              }
+        
+              #profile-photo {
+                  margin-bottom: 20px; /* Add space between photo and description */
+              }
+          }
+        </style>
+        
         <!-- Header-->
         <!-- <header class="bg-primary bg-gradient py-5 text-white">
             <div class="container-lg px-5 text-center">
